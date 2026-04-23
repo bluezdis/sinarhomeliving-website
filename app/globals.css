@@ -3,13 +3,13 @@
 @tailwind utilities;
 
 :root {
-  /* Cream & refined green color palette */
+  /* Cream & warm brown color palette */
   --background: 30 14% 97%;
   --background-light: 30 18% 95%;
   --foreground: 30 15% 20%;
-  --primary: 160 30% 40%;
-  --primary-light: 160 35% 60%;
-  --primary-dark: 160 30% 28%;
+  --primary: 23 41% 39%;
+  --primary-light: 23 41% 58%;
+  --primary-dark: 23 41% 28%;
   --accent: 35 70% 55%;
   --accent-light: 35 70% 75%;
   --secondary: 30 20% 92%;

@@ -18,15 +18,15 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-40 bg-white border-b border-border shadow-md">
       <Container>
-        <div className="flex items-center justify-between h-16">
+        <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
               src="/images/logo-sinar.png"
               alt="Sinar Home Living"
-              width={160}
-              height={48}
-              className="h-10 md:h-12 w-auto object-contain"
+              width={200}
+              height={60}
+              className="h-12 sm:h-14 md:h-16 w-auto object-contain"
               priority
             />
           </Link>

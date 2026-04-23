@@ -11,7 +11,6 @@ export default function Navbar() {
     { href: "/", label: "Beranda" },
     { href: "/produk", label: "Produk" },
     { href: "/tentang-kami", label: "Tentang Kami" },
-    { href: "/layanan", label: "Layanan" },
     { href: "/kontak", label: "Kontak" },
   ];
 

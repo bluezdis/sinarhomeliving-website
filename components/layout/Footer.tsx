@@ -82,7 +82,6 @@ export default function Footer() {
               <FooterLink href="/">Beranda</FooterLink>
               <FooterLink href="/produk">Produk</FooterLink>
               <FooterLink href="/tentang-kami">Tentang Kami</FooterLink>
-              <FooterLink href="/layanan">Layanan</FooterLink>
               <FooterLink href="/kontak">Kontak</FooterLink>
             </ul>
           </div>

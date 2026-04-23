@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Product } from "@/data/products";
 import Card from "../common/Card";
 import Button from "../common/Button";
@@ -15,12 +16,15 @@ export default function ProductCard({ product }: ProductCardProps) {
     : 0;
 
   return (
-    <Card hover className="flex flex-col h-full">
+    <Card hover className="flex flex-col h-full overflow-hidden">
       {/* Image Container */}
-      <div className="relative mb-4 bg-secondary rounded-md aspect-square overflow-hidden">
-        <div className="w-full h-full bg-gradient-to-br from-secondary to-secondary-light flex items-center justify-center">
-          <span className="text-muted">Gambar Produk</span>
-        </div>
+      <div className="relative mb-4 bg-secondary rounded-lg aspect-square overflow-hidden group">
+        <Image
+          src={product.image}
+          alt={product.name}
+          fill
+          className="object-cover group-hover:scale-105 transition-transform duration-300"
+        />
 
         {/* Category Badge */}
         <div className="absolute top-3 left-3 bg-primary text-white px-3 py-1 rounded-full text-xs font-medium">

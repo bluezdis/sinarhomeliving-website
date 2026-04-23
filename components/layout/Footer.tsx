@@ -5,13 +5,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-foreground text-white py-12">
+    <footer className="bg-primary text-white py-16">
       <Container className="mb-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
           <div className="flex flex-col gap-4">
-            <div className="w-12 h-12 bg-primary rounded-lg flex items-center justify-center font-bold">
-              SHL
+            <div className="w-12 h-12 bg-accent rounded-lg flex items-center justify-center font-bold text-primary">
+              S
             </div>
             <div>
               <h3 className="font-bold text-lg mb-2">Sinar Home Living</h3>

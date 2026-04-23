@@ -30,7 +30,7 @@ export const products: Product[] = [
     category: "Sofa & Kursi",
     price: 3500000,
     originalPrice: 4200000,
-    image: "/images/sofa-1.jpg",
+    image: "/images/products/sofa-1.jpg",
     description:
       "Sofa L yang elegan dengan desain minimalis modern. Bahan fabric berkualitas tinggi yang nyaman dan tahan lama.",
     specs: [
@@ -47,7 +47,7 @@ export const products: Product[] = [
     name: "Kasur Busa Orthopedic 200x200",
     category: "Kasur & Springbed",
     price: 2800000,
-    image: "/images/kasur-1.jpg",
+    image: "/images/products/bed-1.jpg",
     description:
       "Kasur busa orthopedic dengan teknologi terkini untuk dukungan tulang belakang yang optimal.",
     specs: [
@@ -64,7 +64,7 @@ export const products: Product[] = [
     name: "Lemari Plastik 4 Pintu Besar",
     category: "Lemari",
     price: 1200000,
-    image: "/images/lemari-1.jpg",
+    image: "/images/products/wardrobe-1.jpg",
     description:
       "Lemari plastik berkualitas dengan 4 pintu, kokoh dan tahan lama. Cocok untuk penyimpanan berbagai barang.",
     specs: [
@@ -81,7 +81,7 @@ export const products: Product[] = [
     name: "Meja Belajar Kayu Solid",
     category: "Meja",
     price: 850000,
-    image: "/images/meja-1.jpg",
+    image: "/images/products/table-1.jpg",
     description:
       "Meja belajar dari kayu solid dengan desain ergonomis. Cocok untuk ruang belajar anak atau kantor kecil.",
     specs: [
@@ -98,7 +98,7 @@ export const products: Product[] = [
     name: "Rak Sayuran Besi 5 Tingkat",
     category: "Rak",
     price: 450000,
-    image: "/images/rak-1.jpg",
+    image: "/images/products/rack-1.jpg",
     description:
       "Rak sayuran dengan struktur besi yang kuat dan kokoh. Ideal untuk menyimpan sayuran atau barang lainnya.",
     specs: [
@@ -116,7 +116,7 @@ export const products: Product[] = [
     category: "Sofa & Kursi",
     price: 1500000,
     originalPrice: 1800000,
-    image: "/images/kursi-1.jpg",
+    image: "/images/products/office-chair-1.jpg",
     description:
       "Kursi gaming dengan desain ergonomis yang nyaman untuk penggunaan jangka panjang.",
     specs: [
@@ -133,7 +133,7 @@ export const products: Product[] = [
     name: "Springbed Premium 160x200",
     category: "Kasur & Springbed",
     price: 4500000,
-    image: "/images/kasur-2.jpg",
+    image: "/images/products/bed-2.jpg",
     description:
       "Springbed premium dengan teknologi coil terbaik untuk kenyamanan maksimal sepanjang malam.",
     specs: [
@@ -150,7 +150,7 @@ export const products: Product[] = [
     name: "Lemari Besi 2 Pintu",
     category: "Lemari",
     price: 1800000,
-    image: "/images/lemari-2.jpg",
+    image: "/images/products/wardrobe-2.jpg",
     description:
       "Lemari besi berkualitas dengan 2 pintu. Kokoh, tahan lama, dan anti karat.",
     specs: [
@@ -167,7 +167,7 @@ export const products: Product[] = [
     name: "Meja Rias Minimalis",
     category: "Meja",
     price: 920000,
-    image: "/images/meja-2.jpg",
+    image: "/images/products/table-2.jpg",
     description:
       "Meja rias dengan desain minimalis modern dan cermin yang luas untuk kenyamanan maksimal.",
     specs: [
@@ -184,7 +184,7 @@ export const products: Product[] = [
     name: "Rak Piring Stainless 3 Tingkat",
     category: "Rak",
     price: 380000,
-    image: "/images/rak-2.jpg",
+    image: "/images/products/rack-1.jpg",
     description:
       "Rak piring dari stainless steel berkualitas. Hemat tempat dan mudah dibersihkan.",
     specs: [
@@ -201,7 +201,7 @@ export const products: Product[] = [
     name: "Sofa Bed Multifungsi",
     category: "Sofa & Kursi",
     price: 2200000,
-    image: "/images/sofa-2.jpg",
+    image: "/images/products/sofa-2.jpg",
     description:
       "Sofa bed yang dapat dibuka menjadi tempat tidur. Sempurna untuk apartemen atau ruang tamu yang terbatas.",
     specs: [
@@ -218,7 +218,7 @@ export const products: Product[] = [
     name: "Meja Kerja Kantor Modern",
     category: "Furniture Kantor",
     price: 1100000,
-    image: "/images/meja-kerja-1.jpg",
+    image: "/images/products/table-1.jpg",
     description:
       "Meja kerja dengan desain modern dan minimalis. Dilengkapi dengan laci untuk penyimpanan.",
     specs: [

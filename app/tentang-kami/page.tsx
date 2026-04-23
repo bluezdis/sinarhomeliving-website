@@ -2,6 +2,7 @@ import Image from "next/image";
 import Container from "@/components/common/Container";
 import Card from "@/components/common/Card";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import StoreBranches from "@/components/tentang-kami/StoreBranches";
 
 export default function TentangKamiPage() {
   const features = [
@@ -102,6 +103,9 @@ export default function TentangKamiPage() {
           </div>
         </Container>
       </section>
+
+      {/* Store Branches Section */}
+      <StoreBranches />
 
       <WhatsAppButton fixed />
     </>

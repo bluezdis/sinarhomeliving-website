@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary brand color - warm brown/tan */
+  --primary: 30 80% 50%;
+  --primary-dark: 30 80% 35%;
+  
+  /* Secondary/Accent colors */
+  --secondary: 35 70% 45%;
+  --accent: 190 80% 50%;
+  
+  /* Neutrals */
+  --background: 0 0% 98%;
+  --foreground: 30 20% 15%;
+}
+
+@layer base {
+  html {
+    @apply bg-background text-foreground;
+  }
+}

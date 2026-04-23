@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 :root {
-  /* Professional dark green color palette */
-  --background: 0 0% 100%;
-  --background-light: 160 30% 96%;
-  --foreground: 160 20% 15%;
-  --primary: 160 35% 35%;
-  --primary-light: 160 35% 55%;
-  --primary-dark: 160 35% 25%;
+  /* Cream & refined green color palette */
+  --background: 30 14% 97%;
+  --background-light: 30 18% 95%;
+  --foreground: 30 15% 20%;
+  --primary: 160 30% 40%;
+  --primary-light: 160 35% 60%;
+  --primary-dark: 160 30% 28%;
   --accent: 35 70% 55%;
   --accent-light: 35 70% 75%;
-  --secondary: 160 25% 92%;
-  --secondary-light: 160 25% 97%;
-  --border: 160 25% 88%;
+  --secondary: 30 20% 92%;
+  --secondary-light: 30 25% 96%;
+  --border: 30 15% 85%;
   --success: 142 76% 36%;
   --warning: 38 92% 50%;
   --error: 0 84% 60%;
-  --muted: 160 15% 60%;
-  --muted-foreground: 160 15% 45%;
+  --muted: 30 10% 55%;
+  --muted-foreground: 30 10% 40%;
   --radius: 0.5rem;
 }
 

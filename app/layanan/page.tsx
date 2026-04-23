@@ -3,6 +3,7 @@ import SectionTitle from "@/components/common/SectionTitle";
 import Card from "@/components/common/Card";
 import Button from "@/components/common/Button";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import ServiceCard from "@/components/layanan/ServiceCard";
 
 export default function LayananPage() {
   const services = [
@@ -11,7 +12,7 @@ export default function LayananPage() {
       title: "Pengiriman Gratis",
       description:
         "Pengiriman gratis untuk pembelian di atas Rp 500.000 ke seluruh Indonesia dengan asuransi penuh.",
-      features: [
+      details: [
         "Gratis ke seluruh Indonesia",
         "Asuransi barang penuh",
         "Pengiriman dalam 3-7 hari kerja",
@@ -22,7 +23,7 @@ export default function LayananPage() {
       title: "Cicilan Tanpa Bunga",
       description:
         "Kami menyediakan berbagai pilihan cicilan untuk memudahkan Anda membeli furniture impian.",
-      features: [
+      details: [
         "Cicilan 3, 6, atau 12 bulan",
         "Tanpa bunga & admin",
         "Proses persetujuan cepat",
@@ -33,8 +34,8 @@ export default function LayananPage() {
       title: "Garansi Produk",
       description:
         "Setiap produk yang Anda beli dilengkapi dengan garansi resmi dari manufacturer.",
-      features: [
-        "Garansi 1-3 tahun tergantif produk",
+      details: [
+        "Garansi 1-3 tahun tergantung produk",
         "Klaim garansi mudah & cepat",
         "Customer service siap membantu",
       ],
@@ -44,10 +45,10 @@ export default function LayananPage() {
       title: "Konsultasi Gratis",
       description:
         "Tim ahli kami siap memberikan konsultasi gratis untuk membantu Anda memilih furniture yang tepat.",
-      features: [
+      details: [
         "Konsultasi desain ruangan",
         "Rekomendasi produk sesuai budget",
-        "Perawatan furniture gratis",
+        "Perawatan furniture",
       ],
     },
     {
@@ -55,7 +56,7 @@ export default function LayananPage() {
       title: "Kebijakan Pengembalian",
       description:
         "Kami memberikan kebijakan pengembalian yang mudah dan fleksibel jika Anda tidak puas.",
-      features: [
+      details: [
         "Pengembalian dalam 7 hari",
         "Uang kembali 100%",
         "Tanpa pertanyaan yang rumit",
@@ -66,7 +67,7 @@ export default function LayananPage() {
       title: "Customer Support 24/7",
       description:
         "Tim customer service kami siap membantu Anda kapan saja, setiap hari.",
-      features: [
+      details: [
         "Respon cepat & ramah",
         "Tersedia via WhatsApp, Email, Phone",
         "Solusi masalah terbaik",
@@ -96,23 +97,13 @@ export default function LayananPage() {
           />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {services.map((service, index) => (
-              <Card key={index} hover>
-                <div className="text-5xl mb-4">{service.icon}</div>
-                <h3 className="text-xl font-bold text-foreground mb-2">
-                  {service.title}
-                </h3>
-                <p className="text-foreground/80 text-sm mb-4">
-                  {service.description}
-                </p>
-                <ul className="space-y-2 text-sm text-foreground/80">
-                  {service.features.map((feature, idx) => (
-                    <li key={idx} className="flex gap-2">
-                      <span className="text-primary font-bold">✓</span>
-                      <span>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </Card>
+              <ServiceCard
+                key={index}
+                icon={service.icon}
+                title={service.title}
+                description={service.description}
+                details={service.details}
+              />
             ))}
           </div>
         </Container>

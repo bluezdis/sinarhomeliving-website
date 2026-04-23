@@ -1,8 +1,10 @@
 import Container from "@/components/common/Container";
 import SectionTitle from "@/components/common/SectionTitle";
-import Button from "@/components/common/Button";
 import Card from "@/components/common/Card";
+import Button from "@/components/common/Button";
 import WhatsAppButton from "@/components/common/WhatsAppButton";
+import CompanyStory from "@/components/tentang-kami/CompanyStory";
+import MissionVision from "@/components/tentang-kami/MissionVision";
 
 export default function TentangKamiPage() {
   const values = [
@@ -46,101 +48,10 @@ export default function TentangKamiPage() {
       </div>
 
       {/* Story Section */}
-      <section className="py-16 md:py-24">
-        <Container>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            <div>
-              <SectionTitle
-                title="Kisah Kami"
-                subtitle=""
-                centered={false}
-              />
-              <p className="text-foreground/80 mb-4 leading-relaxed">
-                Sinar Home Living didirikan dengan visi sederhana namun kuat:
-                menyediakan furniture dan perlengkapan rumah tangga berkualitas
-                dengan harga yang terjangkau untuk seluruh masyarakat Indonesia.
-              </p>
-              <p className="text-foreground/80 mb-4 leading-relaxed">
-                Sejak awal, kami berkomitmen untuk memberikan pengalaman berbelanja
-                yang memuaskan dengan produk-produk pilihan, layanan pelanggan yang
-                responsif, dan proses pengiriman yang aman dan cepat.
-              </p>
-              <p className="text-foreground/80 mb-6 leading-relaxed">
-                Kini, dengan dukungan pelanggan setia kami, Sinar Home Living terus
-                berkembang dan menjadi pilihan utama untuk kebutuhan furniture rumah
-                tangga di Indonesia.
-              </p>
-              <Button href="/kontak" variant="primary">
-                Hubungi Kami Sekarang
-              </Button>
-            </div>
-            <div className="bg-secondary rounded-lg aspect-square flex items-center justify-center">
-              <div className="text-center space-y-2">
-                <div className="text-6xl">🏠</div>
-                <p className="text-muted">Gambar Tim Kami</p>
-              </div>
-            </div>
-          </div>
-        </Container>
-      </section>
+      <CompanyStory />
 
       {/* Mission & Vision */}
-      <section className="py-16 md:py-24 bg-secondary">
-        <Container>
-          <SectionTitle
-            title="Misi & Visi Kami"
-            subtitle="Komitmen kami untuk memberikan yang terbaik"
-          />
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card>
-              <h3 className="text-2xl font-bold text-primary mb-4">Misi</h3>
-              <ul className="space-y-3 text-foreground/80">
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">→</span>
-                  <span>
-                    Menyediakan furniture berkualitas tinggi dengan harga terjangkau
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">→</span>
-                  <span>Memberikan layanan pelanggan yang luar biasa</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">→</span>
-                  <span>Membangun kepercayaan jangka panjang dengan pelanggan</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">→</span>
-                  <span>Terus berinovasi dalam produk dan layanan</span>
-                </li>
-              </ul>
-            </Card>
-            <Card>
-              <h3 className="text-2xl font-bold text-primary mb-4">Visi</h3>
-              <ul className="space-y-3 text-foreground/80">
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">→</span>
-                  <span>
-                    Menjadi toko online furniture pilihan utama di Indonesia
-                  </span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">→</span>
-                  <span>Memperluas jangkauan ke seluruh nusantara</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">→</span>
-                  <span>Menyediakan produk yang ramah lingkungan</span>
-                </li>
-                <li className="flex gap-3">
-                  <span className="text-primary font-bold">→</span>
-                  <span>Menciptakan dampak positif bagi masyarakat</span>
-                </li>
-              </ul>
-            </Card>
-          </div>
-        </Container>
-      </section>
+      <MissionVision />
 
       {/* Values Section */}
       <section className="py-16 md:py-24">

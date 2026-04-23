@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import Container from "../common/Container";
 
 export default function Navbar() {
@@ -19,18 +20,15 @@ export default function Navbar() {
       <Container>
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
-          <Link href="/" className="flex items-center gap-3">
-            <div className="w-11 h-11 bg-primary rounded-lg flex items-center justify-center text-white font-bold text-lg">
-              S
-            </div>
-            <div className="hidden sm:flex flex-col">
-              <span className="font-bold text-foreground text-base leading-tight">
-                Sinar
-              </span>
-              <span className="text-xs text-primary font-semibold">
-                Home Living
-              </span>
-            </div>
+          <Link href="/" className="flex items-center">
+            <Image
+              src="/images/logo-sinar.png"
+              alt="Sinar Home Living"
+              width={160}
+              height={48}
+              className="h-10 md:h-12 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* Desktop Menu */}

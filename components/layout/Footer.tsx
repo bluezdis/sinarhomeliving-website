@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Container from "../common/Container";
 
 export default function Footer() {
@@ -40,12 +41,15 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 lg:gap-8">
           {/* Brand Column */}
           <div className="lg:col-span-4 space-y-5">
-            <div className="flex items-center gap-3">
-              <div className="w-11 h-11 bg-accent rounded-lg flex items-center justify-center font-bold text-primary text-lg">
-                S
-              </div>
-              <span className="font-bold text-xl text-white">Sinar Home Living</span>
-            </div>
+            <Link href="/" className="inline-block">
+              <Image
+                src="/images/logo-sinar.png"
+                alt="Sinar Home Living"
+                width={180}
+                height={54}
+                className="h-14 w-auto object-contain brightness-0 invert"
+              />
+            </Link>
             <p className="text-white/70 leading-relaxed">
               Toko online terpercaya untuk furniture dan perlengkapan rumah tangga 
               berkualitas dengan harga terjangkau sejak 2015.
